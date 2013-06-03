@@ -1,4 +1,4 @@
-// Align to Object
+// Align to Object (cmd shift a)
 // v.04
 // This command aligns selected layers or groups to a ‘key object’ within the selection. Alignments are specified as follows: L = Left, R = Right, T = Top, B = Bottom, H = Horizontal Center, V = Vertical Center. The key object is designated by its position in the layer stack, from the bottom upwards: 1, 2, 3, etc. (If no object is specified, the bottom layer in the selection becomes the key object.)
 // As an example, H1 indicates Horizontal Center alignment to the 1st or bottom object. T3 indicates Top alignment to the 3rd object. L indicates Left alignment to the bottom object (the default key object).

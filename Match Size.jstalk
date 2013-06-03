@@ -1,4 +1,4 @@
-// Match Size
+// Match Size (shift s)
 // v.03b
 // This command resizes selected layers or groups to match a key object within the selection. The key object is designated by its position in the selection's layer stack, from the bottom upwards: 1, 2, 3, etc. (If no object is specified, the bottom layer in the selection becomes the key object.) To match width or height only, add W or H to the input.
 // This script is ideal for a series of similar items such as inserted bitmaps. Once the first bitmap has been resized, the remaining bitmaps can be sized very quickly. Note, however, that a bitmap's original proportions will typically be maintained when resizing. In such cases, add W or H to specify which dimension you wish to match.
@@ -11,7 +11,7 @@
 // USER VARIABLES
 // When a text object is matched, the resulting frame is often too large or too small for the text, and in some cases, the command will appear to have had no effect. As an alternative to this, the font size of the text can be adjusted to match the height of the key object, by setting ‘matchFontSize’ to true.
 
-var rotate = true;				// To match rotation, set to true
+var rotate = false;				// To match rotation, set to true
 var matchFontSize = true;		// For text objects
 var tooltip = true;
 

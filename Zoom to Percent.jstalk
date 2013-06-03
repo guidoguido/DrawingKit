@@ -1,4 +1,4 @@
-// Zoom to Percent
+// Zoom to Percent (shift z)
 // v.05
 // This command allows you to view a document at a custom zoom percentage. If there's a zoom percentage that you use frequently, you may enter its value in the User Variables section and access it by holding the Option key when you run the command. Alternatively, you may disable the user input dialog so that the same zoom setting is applied every time the script is run. (If you disable user input, you may still access the input dialog on an as-needed basis by holding the Option key when running the command.)
 // A centering option is also included and is enabled by default.
