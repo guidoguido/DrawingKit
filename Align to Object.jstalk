@@ -35,7 +35,7 @@ if (selection != null && selection.length() >=2) {
 
 	// Parsing input ++++++++++++++++++
 
-	var input = [doc askForUserInput:"Choose L, R, T, B, H, V. Add layer number." initialValue:"H1"]
+	var input = [doc askForUserInput:"Choose L, R, T, B, H, V, C. Add layer number." initialValue:"H1"]
 
 	// Test first and last character (isNaN = letter) and slice string
 	var letter, number;
@@ -53,7 +53,7 @@ if (selection != null && selection.length() >=2) {
 	}
 	// Align: Compare to array, set to H as default backup
 	var align = letter.toUpperCase();
-	var alignValues = new Array('L','R','T','B','H','V');
+	var alignValues = new Array('L','R','T','B','H','V','C');
 	if (alignValues.indexOf(align) == -1) {align = "H";}
 
 	// Key object: Fix index #, set to 0 as backup (for NaN or 0 input)
@@ -93,6 +93,10 @@ if (selection != null && selection.length() >=2) {
 		}
 		else if (align == "V") {
 			rect.setMidX(keyObj.midX());
+		}
+		else if (align == "C") {
+			rect.setMidX(keyObj.midX());
+			rect.setMidY(keyObj.midY());
 		}
 	}
 
